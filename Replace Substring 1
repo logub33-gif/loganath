@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ReplaceSubstring {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        String S = sc.nextLine();
+        String T = sc.nextLine();
+        int start = Integer.parseInt(sc.nextLine());
+        int end = Integer.parseInt(sc.nextLine());
+
+        
+        String modifiedString = S.substring(0, start) + T + S.substring(end);
+
+        
+        System.out.println(modifiedString);
+        
+        sc.close();
+    }
+}
